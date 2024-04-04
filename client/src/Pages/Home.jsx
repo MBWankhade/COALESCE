@@ -20,6 +20,11 @@ const Home = () => {
     navigate("/create-room");
   }
 
+  const handleOpenCodeEditor = () => {
+    window.location.href = "https://coalesce-code-editor.vercel.app/";
+  }
+  
+
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="text-center mb-8">
@@ -29,6 +34,13 @@ const Home = () => {
       <div className="flex space-x-4 mb-8">
         <button onClick={handleJoinRoom} className="bg-blue hover:bg-blue text-white py-2 px-4 rounded-lg transition duration-300 focus:outline-none">Join Room</button>
         <button onClick={handleCreateRoom} className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition duration-300 focus:outline-none">Create Room</button>
+        <button 
+  onClick={handleOpenCodeEditor} 
+  className="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg transition duration-300 focus:outline-none border-none shadow-lg font-mono"
+>
+  Start Coding
+</button>
+
 
       </div>
       <div className="w-full bg-gray-100 p-8 rounded-lg text-center">
