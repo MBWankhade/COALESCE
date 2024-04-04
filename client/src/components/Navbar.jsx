@@ -21,7 +21,8 @@ const Navbar = ({isLoading , handleLogout, userData, handleLogin, isAuthenticate
 
     const navItems = [
       {path:"/", title:"Home"},
-      {path:"/join-room", title:"My Rooms"}
+      {path:"/join-room", title:"My Groups"},
+      {path:"https://coalesce-code-editor.vercel.app/", title : "Code Editor"}
   ]
 
   const LoginPopup = ({ handleLogout }) => (
